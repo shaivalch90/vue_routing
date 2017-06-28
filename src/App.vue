@@ -3,6 +3,12 @@
     <img src="./assets/logo.png">
     <h1> {{ msg }}</h1>
     <hr>
+    <!--Reloads Page and all the states every time-->
+    <!--<a href="/">Home</a>-->
+    <router-link to="/">Home</router-link>
+    <router-link to="/users/steve">User Steve</router-link>
+    <router-link to="/users/tony">User Tony</router-link>
+    <hr>
     <router-view></router-view>
   </div>
 </template>
@@ -25,7 +31,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 
 img {

@@ -7,7 +7,7 @@ import Home from './Home.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/user', component: User},
+  { path: '/users/:userName', component: User},
   { path: '/', component: Home}
 ]
 
